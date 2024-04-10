@@ -18,5 +18,17 @@
 # == YOUR CODE ==
 
 def is_valid(password):
-    pass # Your code goes here (delete the `pass`)
+    
+    if len(password) < 8:
+        return False
+    for char in password:
+        if char in "!@$%&":
+            return True
+    
+    return False
+    
+    
+    
+    
+    
 
